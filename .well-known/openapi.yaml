@@ -1,7 +1,7 @@
 openapi: 3.0.2
 info:
-  title: Retrieval Plugin API
-  description: A retrieval API for querying and filtering documents based on natural language queries and metadata
+  title: Planoly Warehouse API
+  description: A retrieval API for querying and filtering data and models from planoly-warehouse
   version: 1.0.0
   servers:
     - url: https://plankton-app-k79a7.ondigitalocean.app/
@@ -133,6 +133,7 @@ components:
         queries:
           title: Queries
           type: array
+          description: this is an array of search query objects
           items:
             $ref: "#/components/schemas/Query"
     QueryResponse:
